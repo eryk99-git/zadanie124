@@ -26,3 +26,19 @@ int main() {
 
 return 0;
     }
+
+float pole_prostokata(float a, float b){
+	float y;
+
+	y = a*b;
+
+	return(y);
+}
+float pole_trojkata(float a, float b, float c){
+	float y, p;
+
+    p = (a + b + c) / (float)2;
+	y = sqrt(p*(p-a)*(p-b)*(p-c));
+
+	return(y);
+}
